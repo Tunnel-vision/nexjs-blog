@@ -8,9 +8,10 @@ import { getSortedPostsData } from "../lib/posts";
 // import { Instagram } from 'reactjs-social-embed'
 import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
+import FBcard from "@/components/FBcard";
 
 
-const FBCard  = dynamic(()=> import('@/components/FBcard'),{ssr: false})
+// const FBCard  = dynamic(()=> import('@/components/FBcard'),{ssr: false})
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,7 +27,7 @@ export default function Home({allPostsData}:{allPostsData: any[]}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div style={{width:'390px',height:'100vh',display:'flex',justifyContent:"center"}}>
-          <FBCard/>
+          <FBcard />
       </div>
     </Layout>
   )

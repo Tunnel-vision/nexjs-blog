@@ -1,0 +1,14 @@
+
+.card {
+    & > span {
+        width: 325px;
+    }
+    & > div {
+        width: 325px;
+    }
+    :global {
+        .fb_iframe_widget {
+            width: 325px;
+        }
+    }
+}
